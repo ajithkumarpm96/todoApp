@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todoApp.css">
+
+</head>
+
+<body>
+    <div class="main-container">
+        <h1 class="main-header">Todo List</h1>
+        <div class="toolbar-container">
+            <form id="input_form" onsubmit="onSubmitForm(event)">
+                <input id="text_area" placeholder="add your tasks"></input>
+                <button type="submit" id="new_entry_btn" >Add</button>
+            </form>
+            <ul id="todo_list"></ul>
+        </div>
+        <button id="clear_completed_button" type="button" onclick="clearCompletedTasks()">Clear completed</button>
+    </div>
+    <script src="todoAppES6.js"></script>
+</body>
+
+</html>

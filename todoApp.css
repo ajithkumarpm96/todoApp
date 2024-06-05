@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.app-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.toolbar-container {
+    display: flex;
+    align-items: center;
+    margin: 25px 70px 0;
+    gap: 60px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 1px solid #becbd1;
+    padding: 36px;
+    background: #a5aeb2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#input_form {
+    /* flex: 1; */
+    display: flex;
+    width: 60%;
+}
+
+#text_area {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#new_entry_btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.list-area-wrapper {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+#todo_list {
+    list-style-type: none;
+    border: 1px solid #b4b5be;
+    padding: 40px 10px;
+    border-radius: 8px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #fefefe;
+    height: 26em;
+    overflow: scroll;
+    scrollbar-width: none;
+    width: 22em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#todo_list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #c9c8c8;
+    justify-content: space-between;
+}
+
+#todo_list li button {
+    padding: 5px;
+    border-radius: 8px;
+    background: #a4a6a7;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.task-name {
+    flex: 1;
+    width: 200px;
+    word-wrap: break-word;
+}
+
+#clear_completed_button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.clear-button:hover {
+    background-color: #c82333;
+}
+
+
+.taskName-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.input-error {
+    border: 1px solid #e21111;
+}
+
+.completed-task {
+    text-decoration: line-through;
+}
